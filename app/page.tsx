@@ -3,6 +3,8 @@ import Hero from './components/Hero'
 import Cards from './components/Cards'
 import Section from './components/Section'
 import Discover from './components/Discover'
+import Connect from './components/Connect'
+import Products from './components/Products'
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Cards />
       <Section />
       <Discover />
+      <Connect />
+      <Products />
     </div>
   )
 }
