@@ -25,7 +25,7 @@ const SearchBar: React.FC = () => {
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white flex items-center justify-center px-6 py-3"
+          className="bg-blue-500 text-white flex items-center px-8 py-4"
         >
           <MagnifyingGlassIcon className="w-5 h-5 stroke-current stroke-2" />
           <span className="ml-2 font-bold text-xl">Search</span>
