@@ -1,15 +1,42 @@
 import React from 'react'
 import SearchBar from './SearchBar'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className='p-5 md:p-24'>
-        <div>
-            <p className='font-bold md:font-extrabold text-2xl md:text-6xl text-center'>The largest B2B pharmaceutical products marketplace</p>
-        </div>
-        <div className='py-5 md:py-24'>
-            <SearchBar />
-        </div>
+    <div className='mt-10 px-5 md:px-24 py-5'>
+      <div>
+        <p className='font-bold md:font-extrabold text-2xl md:text-5xl text-center font-family-poppin'>
+          Nigeria <span className='text-blue-900'>largest B2B</span> pharmaceutical <br/> products marketplace
+        </p>
+      </div>
+      <div className="flex justify-center mt-20 mb-10">
+        
+          <div className='flex items-center hover:text-blue-600 transition duration-300 text-4xl mr-5'>
+            <Image src={"images/one.svg"} alt='drug' width={50} height={50} />
+             <p className="text-lg">Manufactured Drugs </p>
+          </div>
+        
+          <div className='flex items-center hover:text-blue-600 transition duration-300 text-4xl mx-5'>
+            <Image src={"images/one.svg"} alt='drug' width={50} height={50} />
+             <p className="text-lg">Distributors</p>
+          </div>
+        
+          <div className='flex items-center hover:text-blue-600 transition duration-300 text-4xl mx-5'>
+            <Image src={"images/one.svg"} alt='drug' width={50} height={50} />
+             <p className="text-lg">Medical Equipments</p>
+          </div>
+        
+          <div className='flex items-center hover:text-blue-600 transition duration-300 text-4xl ml-5'>
+            <Image src={"images/one.svg"} alt='drug' width={50} height={50} />
+             <p className="text-lg">Licenses</p>
+          </div>
+        
+      </div>
+      <div className='py-2 md:py-14 mt-5'>
+        <SearchBar />
+      </div>
     </div>
   )
 }
