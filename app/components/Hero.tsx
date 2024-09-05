@@ -3,7 +3,7 @@ import SearchBar from './SearchBar'
 
 const Hero = () => {
   return (
-    <div className='px-5 md:px-24 py-5'>
+    <div className='p-5 md:p-24'>
         <div>
             <p className='font-bold md:font-extrabold text-2xl md:text-6xl text-center'>The largest B2B pharmaceutical products marketplace</p>
         </div>

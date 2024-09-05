@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Cards = () => {
   return (
-    <div className='px-5 md:px-24 py-5'>
+    <div className='px-5 md:px-24 pt-5 pb-20'>
         <div className='flex gap-16 flex-col md:flex-row'>
             <div className=' p-6 h-64 gap-2 flex flex-col w-80 rounded-md shadow-md items-center justify-center'>
                 <div>
