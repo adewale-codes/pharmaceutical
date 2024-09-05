@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Hero from './components/Hero'
 import Cards from './components/Cards'
 import Section from './components/Section'
+import Discover from './components/Discover'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Cards />
       <Section />
+      <Discover />
     </div>
   )
 }
