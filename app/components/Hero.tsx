@@ -7,8 +7,8 @@ const Hero = () => {
     <div className="mt-10 px-5 md:px-24 py-5">
       <div>
         <p className="font-bold md:font-extrabold text-2xl md:text-5xl text-center font-family-poppin">
-          Nigeria <span className="text-blue-900">largest B2B</span>{" "}
-          pharmaceutical <br /> products marketplace
+          Nigeria <span className="text-blue-900">largest </span> B2B
+          <span className="block mt-1 md:mt-3">pharmaceutical marketplace</span>
         </p>
       </div>
 
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="py-2 md:py-14 mt-5">
+      <div className="py-2 md:py-14 mt-2">
         <SearchBar />
       </div>
     </div>
