@@ -8,23 +8,23 @@ const DiscoverProcess: React.FC = () => {
   const steps = [
     {
       id: 1,
-      title: "Discover new products",
+      title: "1. Discover new products",
       description:
         "Search for the high-potential products in the largest expert-curated CTD database. Narrow your search applying the industry-specific filter that helps sort products by GMP approvals, country of origin, dossier type, dossier status, and other valuable features.",
       image: "/images/first.svg",
     },
     {
       id: 2,
-      title: "Get positive response from manufacturers",
+      title: "2. Get positive response from manufacturers",
       description:
-        "Submit a request indicating your target market(s), annual purchase forecast, preferrable deal type, and your specific remarks. Get feedback via email. Use our platform to track your inquiry progress",
+        "Submit a request indicating your target market(s), annual purchase forecast, preferable deal type, and your specific remarks. Get feedback via email. Use our platform to track your inquiry progress",
       image: "/images/second.svg",
     },
     {
       id: 3,
-      title: "Connect with qualified manufacturers directly",
+      title: "3. Connect with qualified manufacturers directly",
       description:
-        "Upon a supplier confirming interest, we facilitate direct negotiations between you and the supplier, empowering you with control and transparency throughout the process. Importantly, there are no additional fees, and you finalise all deals directly with the suppliers.",
+        "Upon a supplier confirming interest, we facilitate direct negotiations between you and the supplier, empowering you with control and transparency throughout the process. Importantly, there are no additional fees, and you finalize all deals directly with the suppliers.",
       image: "/images/third.svg",
     },
   ];
@@ -33,18 +33,20 @@ const DiscoverProcess: React.FC = () => {
     <div className="flex flex-col-reverse items-center md:flex-row gap-8">
       <div className="relative flex flex-col gap-6 md:w-1/3 w-full">
         <div className="relative">
-          <div className="absolute top-0 left-[12px] w-[2px] bg-gray-300"></div>
-          <div
-            className="absolute top-0 left-[12px] w-[2px] mt-5 h-full bg-blue-500 transition-all"
-            style={{
-              height: `${
-                (activeStep - 1) * (100 / (steps.length - 1))
-              }%`,
-            }}
-          />
+          {steps.map((step, index) => (
+            <div key={step.id} className="relative">
+              {index < steps.length - 1 && (
+                <div
+                  className={`absolute left-[12px] w-[2px] ${
+                    activeStep > step.id ? "bg-blue-500" : ""
+                  }`}
+                  style={{
+                    top: "26px",
+                    height: "50px",
+                  }}
+                ></div>
+              )}
 
-          {steps.map((step) => (
-            <div key={step.id}>
               <div
                 className="flex items-center gap-2 cursor-pointer"
                 onClick={() => setActiveStep(step.id)}
@@ -60,6 +62,7 @@ const DiscoverProcess: React.FC = () => {
                     <div className="w-3 h-3 rounded-full bg-white"></div>
                   )}
                 </div>
+
                 <div
                   className={`font-bold transition-all ${
                     activeStep === step.id ? "text-black" : "text-gray-400"
@@ -70,7 +73,7 @@ const DiscoverProcess: React.FC = () => {
               </div>
 
               {activeStep === step.id && (
-                <div className="ml-8 mt-2 text-gray-700">
+                <div className="ml-8 mt-2 text-gray-700 md:text-xl">
                   {step.description}
                 </div>
               )}
