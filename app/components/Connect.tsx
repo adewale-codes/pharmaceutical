@@ -60,7 +60,7 @@ const Connect = () => {
               <div className="md:text-xl">Close best-price deals without any brokerage fees</div>
             </div>
           </div>
-          <div>
+          <div className="active:opacity-50">
             <button className="p-5 mt-5 md:mt-10 rounded-lg text-l font-bold bg-blue-600 text-white text-center">
               Go to the marketplace
             </button>
