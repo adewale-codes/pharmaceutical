@@ -61,7 +61,7 @@ const Connect = () => {
             </div>
           </div>
           <div>
-            <button className="p-5 mt-5 md:mt-10 rounded-lg text-2xl font-bold bg-blue-600 text-white text-center">
+            <button className="p-5 mt-5 md:mt-10 rounded-lg text-l font-bold bg-blue-600 text-white text-center">
               Go to the marketplace
             </button>
           </div>
