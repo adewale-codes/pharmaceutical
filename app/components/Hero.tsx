@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="py-2 md:py-14 mt-5">
+      <div className="py-2 md:py-14 mt-2">
         <SearchBar />
       </div>
     </div>

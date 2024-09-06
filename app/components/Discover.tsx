@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Lottie from "lottie-react";
+
 
 const Discover = () => {
   return (
-    <div className="p-5 md:p-24">
+    <div className="p-5 md:p-24 bg-blue-50">
       <div className="font-extrabold md:text-5xl text-center text-2xl md:text-left md:max-w-[700px]">
         Discover high-quality products
       </div>
@@ -71,13 +73,13 @@ const Discover = () => {
         </div>
         <div className="order-1 md:order-2">
           <Image
-            src={"images/mail.svg"}
+            src={"/images/drug-related.png"}
             alt="mail"
-            width={1000}
-            height={1000}
+            width={1500}
+            height={1500}
           />
         </div>
-      </div>
+    </div>
     </div>
   );
 };
