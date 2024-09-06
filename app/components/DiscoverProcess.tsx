@@ -10,21 +10,21 @@ const DiscoverProcess: React.FC = () => {
       id: 1,
       title: "Discover new products",
       description:
-        "Submit a request indicating your target market(s), annual purchase forecast, preferable deal type, and your specific remarks. Get feedback via email. Use our platform to track your inquiry progress.",
+        "Search for the high-potential products in the largest expert-curated CTD database. Narrow your search applying the industry-specific filter that helps sort products by GMP approvals, country of origin, dossier type, dossier status, and other valuable features.",
       image: "/images/first.svg",
     },
     {
       id: 2,
       title: "Get positive response from manufacturers",
       description:
-        "Use our platform to communicate directly with manufacturers, ask for updates, and respond to inquiries.",
+        "Submit a request indicating your target market(s), annual purchase forecast, preferrable deal type, and your specific remarks. Get feedback via email. Use our platform to track your inquiry progress",
       image: "/images/second.svg",
     },
     {
       id: 3,
       title: "Connect with qualified manufacturers directly",
       description:
-        "Start building direct relationships with manufacturers to ensure a smooth supply chain for your business.",
+        "Upon a supplier confirming interest, we facilitate direct negotiations between you and the supplier, empowering you with control and transparency throughout the process. Importantly, there are no additional fees, and you finalise all deals directly with the suppliers.",
       image: "/images/third.svg",
     },
   ];
@@ -33,9 +33,9 @@ const DiscoverProcess: React.FC = () => {
     <div className="flex flex-col-reverse items-center md:flex-row gap-8">
       <div className="relative flex flex-col gap-6 md:w-1/3 w-full">
         <div className="relative">
-          <div className="absolute top-0 left-[12px] w-[2px] h-full bg-gray-300"></div>
+          <div className="absolute top-0 left-[12px] w-[2px] bg-gray-300"></div>
           <div
-            className="absolute top-0 left-[12px] w-[2px] bg-blue-500 transition-all"
+            className="absolute top-0 left-[12px] w-[2px] mt-5 h-full bg-blue-500 transition-all"
             style={{
               height: `${
                 (activeStep - 1) * (100 / (steps.length - 1))
@@ -86,6 +86,7 @@ const DiscoverProcess: React.FC = () => {
           objectFit="cover"
           height={1000}
           width={1000}
+          className="shadow-md"
         />
       </div>
     </div>

@@ -29,7 +29,7 @@ const Cards = () => {
                 <div className='text-center'>100+ products</div>
             </div>
         </div>
-        <div className='flex pt-16 gap-16 flex-col md:flex-row'>
+        <div className='flex pt-16 gap-16 items-center justify-center flex-col md:flex-row'>
             <div className=' p-6 h-64 gap-2 flex flex-col w-80 rounded-md shadow-2xl items-center justify-center'>
                 <div>
                     <Image src={"images/fourth.svg"} alt='drug' width={50} height={50} />
@@ -44,13 +44,13 @@ const Cards = () => {
                 <div className='font-bold text-xl md:text-2xl'>Neutraceuticals</div>
                 <div className='text-center'>5800+ products</div>
             </div>
-            <div className=' p-6 h-64 gap-2 flex flex-col w-80 rounded-md shadow-2xl items-center justify-center'>
+            {/* <div className=' p-6 h-64 gap-2 flex flex-col w-80 rounded-md shadow-2xl items-center justify-center'>
                 <div>
                     <Image src={"images/three.svg"} alt='drug' width={50} height={50} />
                 </div>
                 <div className='font-bold text-xl md:text-2xl'>Biosimilars</div>
                 <div className='text-center'>100+ products</div>
-            </div>
+            </div> */}
         </div>
     </div>
   )
