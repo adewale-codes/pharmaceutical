@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Lottie from "lottie-react";
 
-
 const Discover = () => {
   return (
     <div className="p-5 md:p-24 bg-blue-50">
@@ -79,7 +78,7 @@ const Discover = () => {
             height={1500}
           />
         </div>
-    </div>
+      </div>
     </div>
   );
 };

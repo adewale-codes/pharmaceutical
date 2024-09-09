@@ -17,7 +17,7 @@ const Products = () => {
         </div>
       </div>
       <div className="py-5 md:py-24">
-      <DiscoverProcess />
+        <DiscoverProcess />
       </div>
     </div>
   );

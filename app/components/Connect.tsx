@@ -20,7 +20,8 @@ const Connect = () => {
         </div>
         <div className="pt-5 md:pt-10">
           <div className="text-xl">
-          Reduce time-to-contract by finding qualified manufaturers. Share your business case and connect with suppliers directly.
+            Reduce time-to-contract by finding qualified manufaturers. Share
+            your business case and connect with suppliers directly.
           </div>
           <div className="flex flex-col pt-5 md:pt-10 gap-5">
             <div className="flex items-center gap-2">
@@ -30,7 +31,9 @@ const Connect = () => {
                 height={25}
                 width={25}
               />
-              <div className="md:text-xl">Get vetted information on products and manufacturers</div>
+              <div className="md:text-xl">
+                Get vetted information on products and manufacturers
+              </div>
             </div>
             <div className="flex items-center gap-2">
               <Image
@@ -39,7 +42,9 @@ const Connect = () => {
                 height={25}
                 width={25}
               />
-              <div className="md:text-xl">Make requests for quotations easily</div>
+              <div className="md:text-xl">
+                Make requests for quotations easily
+              </div>
             </div>
             <div className="flex items-center gap-2">
               <Image
@@ -48,7 +53,9 @@ const Connect = () => {
                 height={25}
                 width={25}
               />
-              <div className="md:text-xl">Connect with manufacturers directly</div>
+              <div className="md:text-xl">
+                Connect with manufacturers directly
+              </div>
             </div>
             <div className="flex items-center gap-2 ">
               <Image
@@ -57,7 +64,9 @@ const Connect = () => {
                 height={25}
                 width={25}
               />
-              <div className="md:text-xl">Close best-price deals without any brokerage fees</div>
+              <div className="md:text-xl">
+                Close best-price deals without any brokerage fees
+              </div>
             </div>
           </div>
           <div>

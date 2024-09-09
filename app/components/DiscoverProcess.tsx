@@ -30,7 +30,7 @@ const DiscoverProcess: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col-reverse items-center md:flex-row gap-8">
+    <div className="flex flex-col-reverse md:flex-row gap-8">
       <div className="relative flex flex-col gap-6 md:w-1/3 w-full">
         <div className="relative">
           {steps.map((step, index) => (
@@ -86,7 +86,7 @@ const DiscoverProcess: React.FC = () => {
         <Image
           src={steps.find((step) => step.id === activeStep)?.image || ""}
           alt={`Step ${activeStep}`}
-          objectFit="cover"
+          //   objectFit="cover"
           height={1000}
           width={1000}
           className="shadow-md"

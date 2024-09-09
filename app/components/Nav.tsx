@@ -1,7 +1,12 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Bars3Icon, XMarkIcon, ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/24/solid";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
@@ -10,12 +15,18 @@ interface DropdownItem {
   label: string;
 }
 
-const Dropdown: React.FC<{ title: string; items: DropdownItem[] }> = ({ title, items }) => {
+const Dropdown: React.FC<{ title: string; items: DropdownItem[] }> = ({
+  title,
+  items,
+}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
       setIsOpen(false);
     }
   };
@@ -38,7 +49,11 @@ const Dropdown: React.FC<{ title: string; items: DropdownItem[] }> = ({ title, i
       {isOpen && (
         <div className="absolute z-10 shadow-md top-full mt-2 left-0 bg-white shadow-lg rounded-md p-4 w-64">
           {items.map((item: DropdownItem, index: number) => (
-            <Link key={index} href={item.href} className="block px-4 py-2 hover:bg-gray-100">
+            <Link
+              key={index}
+              href={item.href}
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
               {item.label}
             </Link>
           ))}
