@@ -9,11 +9,11 @@ import Image from "next/image";
 
 const Feedback: React.FC = () => {
   const feedbackData = [
-    {
-      name: "Andreas Gerold",
-      position: "General Manager of Stragen Pharma GmbH",
+   {
+      name: "Sophia Muller",
+      position: "CEO of PharmaTech",
       image: "images/p1.svg",
-      feedback: `“The Pipelinepharma platform is incredibly easy to use, much like leading tech products...”`,
+      feedback: `“Using Pipelinepharma has revolutionized our sourcing process...”`,
     },
     {
       name: "Sophia Muller",
@@ -22,7 +22,7 @@ const Feedback: React.FC = () => {
       feedback: `“Using Pipelinepharma has revolutionized our sourcing process...”`,
     },
     {
-      name: "David Kline",
+      name: "David Klines",
       position: "VP of Operations at MedGlobal",
       image: "images/p3.svg",
       feedback: `“We rely on Pipelinepharma for quick and reliable access to dossiers...”`,
@@ -37,22 +37,24 @@ const Feedback: React.FC = () => {
       name: "David Kline",
       position: "VP of Operations at MedGlobal",
       image: "images/p3.svg",
-      feedback: `“We rely on Pipelinepharma for quick and reliable access to dossiers...”`,
+      feedback: `“.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi purus lectus, euismod id 
+      orci sit amet, aliquet tincidunt erat. Ut dapibus lacinia turpis vulputate efficitur.
+.”`,
     },
   ];
 
   return (
-    <div className="p-5 md:p-24">
+    <div className="p-5 md:p-24 bg-blue-200  ">
       <div>
-        <div className="font-extrabold md:text-5xl text-2xl text-center">
-          What do our happy customers say about us
+        <div className="font-extrabold md:text-4xl text-2xl text-center mb-10">
+          What do  <span className="text-orange-600"> our happy</span> customer<br/> say about us
         </div>
+  
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={30}
           slidesPerView={1}
-        //   navigation
-          pagination={{ clickable: true }}
+          pagination={{ clickable: true, bulletClass: 'swiper-pagination-bullet', modifierClass: 'swiper-pagination-' }}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
@@ -65,28 +67,29 @@ const Feedback: React.FC = () => {
               slidesPerView: 3,
             },
           }}
-          className="py-5"
+          className="py-5 mb-5"
         >
           {feedbackData.map((feedback, index) => (
             <SwiperSlide key={index} className="py-5">
-              <div className="shadow-xl w-96 flex flex-col gap-5 p-5 rounded-md h-80">
-                <div className="flex items-center gap-5">
+              <div className="w-100 flex flex-col gap-10 p-5 rounded-md h-70 bg-white shadow-md shadow-lg">
+                <div className="flex items-center gap-5 ">
                   <Image
                     src={feedback.image}
                     alt="profile"
-                    width={100}
-                    height={100}
+                    width={50}
+                    height={50}
                   />
                   <div>
                     <div>{feedback.name}</div>
                     <div>{feedback.position}</div>
                   </div>
                 </div>
-                <div className="pt-5">{feedback.feedback}</div>
+                <div className="p-5">{feedback.feedback}</div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+    
       </div>
     </div>
   );

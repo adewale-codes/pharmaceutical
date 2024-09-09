@@ -12,7 +12,7 @@ const Products = () => {
         <div className="text-center">
           <div className="md:text-xl md:max-w-[700px]">
             We assist you in discovering new products, matching with potential
-            qualified manufacturers, and making the deals happen.
+            qualified manufacturers, and making the deals happens
           </div>
         </div>
       </div>

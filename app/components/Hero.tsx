@@ -8,7 +8,7 @@ const Hero = () => {
       <div>
         <p className="font-bold md:font-extrabold text-2xl md:text-5xl text-center font-family-poppin">
           Nigeria <span className="text-blue-900">largest </span> B2B
-          <span className="block mt-1 md:mt-3">pharmaceutical marketplace</span>
+          <span className="block mt-1 md:mt-3">Pharmaceutical marketplace</span>
         </p>
       </div>
 
