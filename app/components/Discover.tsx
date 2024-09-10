@@ -10,10 +10,10 @@ const Discover = () => {
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="order-2 md:order-1 py-5 md:py-10">
-          <div className="text-lg text-justify">ad
-            Simplify product discovery with the largest EU CTD dossier database.
-            Expert curated, up-to-date information. Powerful search engine and
-            product filters.
+          <div className="text-lg text-justify">
+            ad Simplify product discovery with the largest EU CTD dossier
+            database. Expert curated, up-to-date information. Powerful search
+            engine and product filters.
           </div>
           <div className="flex flex-col pt-5 md:pt-10 gap-2">
             <div className="flex items-center gap-2">
@@ -65,11 +65,11 @@ const Discover = () => {
             </div>
           </div>
           <div>
-           <div className="active:opacity-50">
-             <button className="p-5 mt-5 md:mt-10 rounded-lg text-xl font-bold bg-blue-600 text-white text-center">
-               Go to the marketplace
-             </button>
-           </div>
+            <div className="active:opacity-50">
+              <button className="p-5 mt-5 md:mt-10 rounded-lg text-xl font-bold bg-blue-600 text-white text-center">
+                Go to the marketplace
+              </button>
+            </div>
           </div>
         </div>
         <div className="order-1 md:order-2">

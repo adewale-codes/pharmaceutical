@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Feedback: React.FC = () => {
   const feedbackData = [
-   {
+    {
       name: "Sophia Muller",
       position: "CEO of PharmaTech",
       image: "images/p1.svg",
@@ -47,14 +47,19 @@ const Feedback: React.FC = () => {
     <div className="p-5 md:p-24 bg-blue-200  ">
       <div>
         <div className="font-extrabold md:text-4xl text-2xl text-center mb-10">
-          What do  <span className="text-orange-600"> our happy</span> customer<br/> say about us
+          What do <span className="text-orange-600"> our happy</span> customer
+          <br /> say about us
         </div>
-  
+
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={30}
           slidesPerView={1}
-          pagination={{ clickable: true, bulletClass: 'swiper-pagination-bullet', modifierClass: 'swiper-pagination-' }}
+          pagination={{
+            clickable: true,
+            bulletClass: "swiper-pagination-bullet",
+            modifierClass: "swiper-pagination-",
+          }}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
@@ -89,7 +94,6 @@ const Feedback: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-    
       </div>
     </div>
   );
