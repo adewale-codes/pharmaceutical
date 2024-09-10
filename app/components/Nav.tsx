@@ -102,11 +102,22 @@ const Nav: React.FC = () => {
         </div>
         <div className="hidden lg:flex">
           <div className="flex justify-center items-center gap-4">
-            <div>Sign in</div>
-            <button className="py-3 px-5 font-bold rounded-lg bg-blue-600 text-white flex items-center gap-2">
-              Get started
-              <ChevronRightIcon className="w-4 h-4 stroke-current stroke-2" />
-            </button>
+            <Link
+              className={pathName === "/signin" ? "" : "text-black"}
+              href="/Signin"
+            >
+              <div>Sign in</div>
+            </Link>
+
+            <Link
+              className={pathName === "/signup" ? "" : "text-black"}
+              href="/Signup"
+            >
+              <button className="py-3 px-5 font-bold rounded-lg bg-blue-600 text-white flex items-center gap-2">
+                Get started
+                <ChevronRightIcon className="w-4 h-4 stroke-current stroke-2" />
+              </button>
+            </Link>
           </div>
         </div>
         <div className="lg:hidden flex justify-self-end cursor-pointer">
@@ -129,13 +140,18 @@ const Nav: React.FC = () => {
           <Dropdown title="Company" items={companyDropdownItems} />
           <div>
             <div className="flex flex-col gap-5">
-              <button className="border-2 border-blue-600 py-3 rounded-lg">
-                Sign in
-              </button>
-              <button className="py-3 rounded-lg bg-blue-600 text-white flex justify-center items-center gap-2">
-                Get started
-                <ChevronRightIcon className="w-4 h-4 stroke-current stroke-2" />
-              </button>
+              <Link href="/Signin">
+                <button className="border-2 border-blue-600 py-3 w-full rounded-lg">
+                  Sign in
+                </button>
+              </Link>
+
+              <Link href="/Signup">
+                <button className="py-3 w-full rounded-lg bg-blue-600 text-white flex justify-center items-center gap-2">
+                  Get started
+                  <ChevronRightIcon className="w-4 h-4 stroke-current stroke-2" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
