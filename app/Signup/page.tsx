@@ -15,6 +15,8 @@ const Signup: React.FC = () => {
     <div>
       {step === 1 && <PersonalDetails onNext={nextStep} />}
       {step === 2 && <CompanyDetails onSubmit={submitForm} />}
+      
+
     </div>
   );
 };

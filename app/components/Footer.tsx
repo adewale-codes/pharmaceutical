@@ -251,12 +251,12 @@ const Footer: React.FC = () => {
               +234-813-2494-814
             </a>
             <a href="#" className="hover:underline mr-2">
-              support@pipelinepharma.com
+              support@airdomax.com
             </a>
           </div>
           <div className="text-center lg:text-right">
             <p>
-              © 2024 Pipelinepharma. All rights reserved. EU patent number
+              © 2024 Airdomax Limited. All rights reserved. EU patent number
               7.069.242
             </p>
           </div>
