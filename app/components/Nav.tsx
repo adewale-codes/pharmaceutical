@@ -79,7 +79,7 @@ const Nav: React.FC = () => {
   ];
 
   const companyDropdownItems: DropdownItem[] = [
-    { href: "/about", label: "About Us" },
+    { href: "/About", label: "About Us" },
     { href: "/experts", label: "Our experts" },
   ];
 
