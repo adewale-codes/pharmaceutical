@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 
 interface CompanyDetailsProps {
   onSubmit: () => void;
@@ -6,13 +8,15 @@ interface CompanyDetailsProps {
 
 const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
   const [companyName, setCompanyName] = useState("");
-  const [country, setCountry] = useState("");
+  const [country, setCountry] = useState<any>(null);
   const [description, setDescription] = useState("");
   const [interests, setInterests] = useState({
     buying: false,
     selling: false,
     license: false,
   });
+
+  const countryOptions = countryList().getData();
 
   const handleSave = () => {
     if (companyName && country) {
@@ -39,16 +43,13 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
           </div>
           <div className="mb-4">
             <label className="block text-gray-700">Country*</label>
-            <select
+            <Select
               value={country}
-              onChange={(e) => setCountry(e.target.value)}
-              className="w-full border rounded-lg px-3 py-2 mt-2"
-            >
-              <option value="">Select your country</option>
-              <option value="Afghanistan">Afghanistan</option>
-              <option value="Albania">Albania</option>
-              <option value="Algeria">Algeria</option>
-            </select>
+              onChange={setCountry}
+              options={countryOptions}
+              placeholder="Select your country"
+              className="mt-2"
+            />
           </div>
           <div className="mb-4">
             <label className="block text-gray-700">
