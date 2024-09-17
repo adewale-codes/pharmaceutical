@@ -1,6 +1,66 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import UserCardSlider from "./components/UserCardSlider";
+
+const users = [
+  {
+    id: "1",
+    name: "Mindaugas Zagorskis",
+    role: "Founder and CEO",
+    image: "/images/m2.svg",
+    description:
+      "Tech entrepreneur. 18+ years experience. Expert in leadership, mentorship.",
+  },
+  {
+    id: "2",
+    name: "Gediminas Vedrickas",
+    role: "Co-founder and CTO",
+    image: "/images/m1.svg",
+    description:
+      "Automation consultant, tech entrepreneur. 20+ years experience.",
+  },
+  {
+    id: "3",
+    name: "Gediminas Vedrickas",
+    role: "Co-founder and CTO",
+    image: "/images/m1.svg",
+    description:
+      "Automation consultant, tech entrepreneur. 20+ years experience.",
+  },
+  {
+    id: "4",
+    name: "Gediminas Vedrickas",
+    role: "Co-founder and CTO",
+    image: "/images/m1.svg",
+    description:
+      "Automation consultant, tech entrepreneur. 20+ years experience.",
+  },
+  {
+    id: "5",
+    name: "Gediminas Vedrickas",
+    role: "Co-founder and CTO",
+    image: "/images/m1.svg",
+    description:
+      "Automation consultant, tech entrepreneur. 20+ years experience.",
+  },
+  {
+    id: "6",
+    name: "Gediminas Vedrickas",
+    role: "Co-founder and CTO",
+    image: "/images/m1.svg",
+    description:
+      "Automation consultant, tech entrepreneur. 20+ years experience.",
+  },
+  {
+    id: "7",
+    name: "Gediminas Vedrickas",
+    role: "Co-founder and CTO",
+    image: "/images/m1.svg",
+    description:
+      "Automation consultant, tech entrepreneur. 20+ years experience.",
+  },
+];
 
 const About = () => {
   return (
@@ -61,6 +121,10 @@ const About = () => {
             We are here to make pharma deals easy.
           </p>
         </div>
+      </div>
+      <div className="p-5 md:p-24">
+        <div>Our experts</div>
+        <UserCardSlider users={users} />
       </div>
       <div className="p-5 md:p-24">
         <div className="font-bold text-2xl md:text-6xl text-center md:text-left">
