@@ -122,7 +122,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="p-5 md:p-24">
+      <div className="p-5 md:p-24 text-2xl md:text-6xl font-bold">
         <div>Our experts</div>
         <UserCardSlider users={users} />
       </div>
