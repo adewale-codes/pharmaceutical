@@ -4,16 +4,15 @@ import Image from "next/image";
 
 const SignIn = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50"
+    <div
+      className="flex min-h-screen items-center justify-center bg-gray-50"
       style={{
-    backgroundImage: `url('/images/bg-full.jpg')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-    
-     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-white p-6 md:p-10 rounded-md shadow-md w-full max-w-4xl mt-10 mb-5">
-        {/* Left Side: Form */}
+        backgroundImage: `url('/images/bg-full.jpg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-white p-6 md:p-10 rounded-md shadow-md w-full max-w-4xl mt-10 mb-5">
         <div className="w-full">
           <h2 className="text-3xl font-semibold mb-6">Sign in</h2>
 

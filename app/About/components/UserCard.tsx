@@ -32,7 +32,7 @@ const UserCard: React.FC<UserCardProps> = ({
               <li key={index}>{item}</li>
             ))}
           </ul>
-          <Link href={`/users/${id}`} className="text-blue-400 mt-2 block">
+          <Link href={`/Staffs/${id}`} className="text-blue-400 mt-2 block">
             Read more about {name}
           </Link>
         </div>

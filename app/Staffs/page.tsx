@@ -9,7 +9,7 @@ const UserDetails = () => {
   }
 
   const user = {
-    id: 2,
+    id,
     name: "Static User",
     role: "Placeholder Role",
     image: "/images/m1.svg",
