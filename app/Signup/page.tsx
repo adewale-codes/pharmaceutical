@@ -24,15 +24,15 @@ const Signup = () => {
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-white p-6 md:p-10 rounded-md shadow-md w-full max-w-4xl mt-10 mb-5">
         <div className="w-full">
-          <h2 className="text-3xl font-semibold mb-6">Sign up</h2>
+          <h2 className="text-3xl font-semibold mb-6">Create a FREE account</h2>
 
           <form className="space-y-3" onSubmit={handleSignup}>
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-bold"
               >
-                E-mail
+                Business email address
               </label>
               <input
                 type="email"
@@ -46,7 +46,7 @@ const Signup = () => {
             <div>
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-bold"
               >
                 Password
               </label>
@@ -59,17 +59,19 @@ const Signup = () => {
               />
             </div>
 
-            <div className="flex justify-between items-center">
-              <a href="#" className="text-sm text-blue-600 hover:underline">
-                Forgot password?
-              </a>
-            </div>
-
+            <label className="flex gap-2 text-sm items-center">
+              <input type="checkbox" />
+              I agree to Pipeline's <span className="text-blue-600">Terms of Service</span>
+            </label>
+            <label className="flex gap-2 text-sm items-center">
+              <input type="checkbox" />
+              I would like to receive email updates from Pipelinepharma
+            </label>
             <button
               type="submit"
               className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none"
             >
-              Sign up
+              Create account
             </button>
           </form>
 
@@ -89,7 +91,7 @@ const Signup = () => {
           <p className="mt-6 text-sm text-center text-gray-500">
             Already have an account?{" "}
             <a href="/Signin" className="text-blue-600 hover:underline">
-              Log in here
+              Sign in here
             </a>
           </p>
         </div>

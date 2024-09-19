@@ -25,14 +25,14 @@ const UserCard: React.FC<UserCardProps> = ({
       />
       <div className="absolute inset-0 flex flex-col justify-end bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="p-4">
-          <h3 className="text-white font-bold">{name}</h3>
-          <p className="text-gray-300">{role}</p>
-          <ul className="text-gray-300 list-disc pl-5 mt-2">
+          <h3 className="text-white font-bold text-base">{name}</h3>
+          <p className="text-gray-300 text-base">{role}</p>
+          <ul className="text-gray-300 list-disc pl-5 mt-2 text-base">
             {description.split(". ").map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
-          <Link href={`/Staffs/${id}`} className="text-blue-400 mt-2 block">
+          <Link href={`/Staffs/${id}`} className="text-blue-400 text-base mt-2 block">
             Read more about {name}
           </Link>
         </div>
