@@ -68,7 +68,7 @@ const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const buyersDropdownItems: DropdownItem[] = [
-    { href: "/subscription", label: "Subscription plan" },
+    { href: "/Subscription", label: "Subscription plan" },
     { href: "/premium", label: "Premium sourcing" },
   ];
 
