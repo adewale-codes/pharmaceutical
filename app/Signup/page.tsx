@@ -61,11 +61,11 @@ const Signup = () => {
 
             <label className="flex gap-2 text-sm items-center">
               <input type="checkbox" />
-              I agree to Pipeline's <span className="text-blue-600">Terms of Service</span>
+              I agree to Airdomax <span className="text-blue-600">Terms of Service</span>
             </label>
             <label className="flex gap-2 text-sm items-center">
               <input type="checkbox" />
-              I would like to receive email updates from Pipelinepharma
+              I would like to receive email updates from Airdomax
             </label>
             <button
               type="submit"
