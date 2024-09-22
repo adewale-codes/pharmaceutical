@@ -75,8 +75,10 @@ const Subscription = () => {
       </div>
 
       <div className="p-5 md:p-24">
-        <div className="font-bold text-xl md:text-6xl text-center md:text-left md:max-w-[500px]">
-          No broker commissions. No term sheet fees
+        <div className="font-bold flex text-xl md:justify-end justify-center md:text-6xl text-center md:text-right w-full ">
+          <div className="md:max-w-[700px] md:w-auto">
+            No broker commissions. No term sheet fees
+          </div>
         </div>
         <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center">
           <div className="w-full order-1 md:order-1">
@@ -134,8 +136,10 @@ const Subscription = () => {
       </div>
 
       <div className="p-5 md:p-24">
-        <div className="font-bold text-xl md:text-6xl text-center md:text-left md:max-w-[800px]">
-          Enhanced support and priority
+        <div className="font-bold flex text-xl md:justify-end justify-center md:text-6xl text-center md:text-right w-full ">
+          <div className="md:max-w-[700px] md:w-auto">
+            Enhanced support and priority
+          </div>
         </div>
         <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center">
           <div className="w-full order-1 md:order-1">
@@ -168,7 +172,7 @@ const Subscription = () => {
       </div>
       <div className="p-5 md:p-24">
         <div>
-            <FAQList />
+          <FAQList />
         </div>
       </div>
       <div>

@@ -73,7 +73,7 @@ const Nav: React.FC = () => {
   ];
 
   const sellersDropdownItems: DropdownItem[] = [
-    { href: "/partner", label: "Partner search" },
+    { href: "/Partner", label: "Partner search" },
     { href: "/listing", label: "Premium listing" },
     { href: "/sellers", label: "Pricing for sellers" },
   ];
