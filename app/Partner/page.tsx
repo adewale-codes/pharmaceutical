@@ -178,19 +178,25 @@ const partner = () => {
       </div>
       <div className="p-5 md:p-24 bg-neutral-100">
         <div>
-            <div className="font-extrabold md:text-5xl text-2xl text-center">
-                Pricing: customized based on project scope
-            </div>
+          <div className="font-extrabold md:text-5xl text-2xl text-center">
+            Pricing: customized based on project scope
+          </div>
         </div>
         <div>
-            <div className="text-center pt-5 md:pt-10">The Partner Search pricing model comprises two components: a project fee and a success fee. The project fee is adaptable, tailored to your project's scope, with additional discounts available for multiple products or regions. The deal closing fee is applicable solely upon successful payment from the buyer.</div>
+          <div className="text-center pt-5 md:pt-10">
+            The Partner Search pricing model comprises two components: a project
+            fee and a success fee. The project fee is adaptable, tailored to
+            your project's scope, with additional discounts available for
+            multiple products or regions. The deal closing fee is applicable
+            solely upon successful payment from the buyer.
+          </div>
         </div>
         <div className="flex items-center justify-center">
-        <div className="active:opacity-50">
-              <button className="p-5 mt-5 md:mt-10 rounded-lg text-xl font-bold bg-blue-600 text-white text-center">
-                Request Subscription plan
-              </button>
-            </div>
+          <div className="active:opacity-50">
+            <button className="p-5 mt-5 md:mt-10 rounded-lg text-xl font-bold bg-blue-600 text-white text-center">
+              Request Subscription plan
+            </button>
+          </div>
         </div>
       </div>
       <div>

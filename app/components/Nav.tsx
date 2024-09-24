@@ -69,13 +69,12 @@ const Nav: React.FC = () => {
 
   const buyersDropdownItems: DropdownItem[] = [
     { href: "/Subscription", label: "Subscription plan" },
-    { href: "/premium", label: "Premium sourcing" },
+    { href: "/Premium", label: "Premium sourcing" },
   ];
 
   const sellersDropdownItems: DropdownItem[] = [
     { href: "/Partner", label: "Partner search" },
-    { href: "/listing", label: "Premium listing" },
-    { href: "/sellers", label: "Pricing for sellers" },
+    { href: "/Sellers", label: "Pricing for sellers" },
   ];
 
   const companyDropdownItems: DropdownItem[] = [
