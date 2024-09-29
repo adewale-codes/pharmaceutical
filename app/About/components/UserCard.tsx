@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import Link from "next/link";
+import Image from "next/image";
 
 interface UserCardProps {
   id: string;
@@ -18,7 +19,7 @@ const UserCard: React.FC<UserCardProps> = ({
 }) => {
   return (
     <div className="group relative w-64 p-4 bg-white shadow-lg rounded-lg overflow-hidden">
-      <img
+      <Image
         className="w-full h-64 object-cover rounded-t-lg"
         src={image}
         alt={name}
@@ -32,7 +33,10 @@ const UserCard: React.FC<UserCardProps> = ({
               <li key={index}>{item}</li>
             ))}
           </ul>
-          <Link href={`/Staffs/${id}`} className="text-blue-400 text-base mt-2 block">
+          <Link
+            href={`/Staffs/${id}`}
+            className="text-blue-400 text-base mt-2 block"
+          >
             Read more about {name}
           </Link>
         </div>

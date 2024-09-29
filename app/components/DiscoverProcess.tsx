@@ -85,7 +85,10 @@ const DiscoverProcess: React.FC = () => {
 
       <div className="flex-1 w-full h-[400px] md:h-auto relative">
         <Image
-          src={steps.find((step) => step.id === activeStep)?.image || "/images/default.svg"}
+          src={
+            steps.find((step) => step.id === activeStep)?.image ||
+            "/images/default.svg"
+          }
           alt={`Step ${activeStep}`}
           height={1000}
           width={1000}

@@ -1,12 +1,13 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const UserDetails = () => {
   const router = useRouter();
   const { id } = router.query;
 
   const [loading, setLoading] = useState(true);
-  
+
   useEffect(() => {
     if (id) {
       setLoading(false);
@@ -28,7 +29,7 @@ const UserDetails = () => {
   return (
     <div className="p-10">
       <div className="flex items-center">
-        <img
+        <Image
           src={user.image}
           alt={user.name}
           className="w-48 h-48 object-cover rounded-full"

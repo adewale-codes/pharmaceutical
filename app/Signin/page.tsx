@@ -67,8 +67,8 @@ const SignIn = () => {
             <p className="text-gray-500">Or</p>
             <button className="mt-2 flex items-center justify-center gap-4 w-full py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-100">
               <Image
-                src={"images/linkedin.svg"}
-                alt="linkedin"
+                src="images/linkedin.svg"
+                alt="LinkedIn"
                 width={24}
                 height={24}
               />
@@ -77,7 +77,7 @@ const SignIn = () => {
           </div>
 
           <p className="mt-6 text-sm text-center text-gray-500">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link href="/Signup" className="text-blue-600 hover:underline">
               Sign up here
             </Link>
@@ -85,10 +85,11 @@ const SignIn = () => {
         </div>
 
         <div className="hidden lg:flex items-center justify-center">
-          <img
+          <Image
             src="/images/signin-bg.jpg"
             alt="Pipeline Pharma"
-            className="object-cover w-full h-full opacity-90"
+            layout="fill"
+            className="object-cover opacity-90"
           />
         </div>
       </div>

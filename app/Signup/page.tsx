@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation"
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const Signup = () => {
@@ -9,7 +9,6 @@ const Signup = () => {
 
   const handleSignup = (e: React.FormEvent) => {
     e.preventDefault();
-
     router.push("/Introduce");
   };
 
@@ -28,10 +27,7 @@ const Signup = () => {
 
           <form className="space-y-3" onSubmit={handleSignup}>
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-bold"
-              >
+              <label htmlFor="email" className="block text-sm font-bold">
                 Business email address
               </label>
               <input
@@ -44,10 +40,7 @@ const Signup = () => {
             </div>
 
             <div>
-              <label
-                htmlFor="password"
-                className="block text-sm font-bold"
-              >
+              <label htmlFor="password" className="block text-sm font-bold">
                 Password
               </label>
               <input
@@ -60,12 +53,12 @@ const Signup = () => {
             </div>
 
             <label className="flex gap-2 text-sm items-center">
-              <input type="checkbox" />
-              I agree to Airdomax <span className="text-blue-600">Terms of Service</span>
+              <input type="checkbox" />I agree to Airdomax{" "}
+              <span className="text-blue-600">Terms of Service</span>
             </label>
             <label className="flex gap-2 text-sm items-center">
-              <input type="checkbox" />
-              I would like to receive email updates from Airdomax
+              <input type="checkbox" />I would like to receive email updates
+              from Airdomax
             </label>
             <button
               type="submit"
@@ -80,7 +73,7 @@ const Signup = () => {
             <button className="mt-2 flex items-center justify-center gap-4 w-full py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-100">
               <Image
                 src={"images/linkedin.svg"}
-                alt="linkedin"
+                alt="LinkedIn"
                 width={24}
                 height={24}
               />
@@ -97,10 +90,11 @@ const Signup = () => {
         </div>
 
         <div className="hidden lg:flex items-center justify-center">
-          <img
+          <Image
             src="/images/signin-bg.jpg"
             alt="Pipeline Pharma"
-            className="object-cover w-full h-full opacity-90"
+            layout="fill"
+            className="object-cover opacity-90"
           />
         </div>
       </div>

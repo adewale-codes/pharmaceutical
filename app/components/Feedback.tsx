@@ -73,7 +73,9 @@ const Feedback: React.FC = () => {
                   />
                   <div>
                     <div className="font-bold">{feedback.name}</div>
-                    <div className="text-sm text-gray-500">{feedback.position}</div>
+                    <div className="text-sm text-gray-500">
+                      {feedback.position}
+                    </div>
                   </div>
                 </div>
                 <div className="p-5 text-gray-600">{feedback.feedback}</div>

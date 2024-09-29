@@ -61,7 +61,7 @@ const Partner = () => {
             <div>
               Finding a reliable business partner can be challenging due to time
               constraints, lack of skilled labour, and diverse market needs,
-              limiting manufacturers' growth potential. Our Partner Search
+              limiting manufacturers&apos; growth potential. Our Partner Search
               service helps overcome these challenges.
             </div>
             <RequestButton />
@@ -92,7 +92,7 @@ const Partner = () => {
       {renderSection(
         "Your Trusted Assistant",
         "images/mega.svg",
-        "At Pipelinepharma, we complement your existing business development efforts. Our Partner Search service provides invaluable insights and connections that amplify your pharma business's growth."
+        "At Pipelinepharma, we complement your existing business development efforts. Our Partner Search service provides invaluable insights and connections that amplify your pharma business&apos;s growth."
       )}
 
       <div className="p-5 md:p-24">
@@ -114,7 +114,7 @@ const Partner = () => {
         <div className="text-center pt-5 md:pt-10">
           The Partner Search pricing model comprises two components: a project
           fee and a success fee. The project fee is adaptable, tailored to your
-          project's scope, with additional discounts available for multiple
+          project&apos;s scope, with additional discounts available for multiple
           products or regions. The deal closing fee is applicable solely upon
           successful payment from the buyer.
         </div>

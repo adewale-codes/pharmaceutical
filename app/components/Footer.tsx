@@ -251,13 +251,17 @@ const Footer: React.FC = () => {
             <a href="tel:+2348132494814" className="hover:underline mr-2">
               +234-813-2494-814
             </a>
-            <a href="mailto:support@airdomax.com" className="hover:underline mr-2">
+            <a
+              href="mailto:support@airdomax.com"
+              className="hover:underline mr-2"
+            >
               support@airdomax.com
             </a>
           </div>
           <div className="text-center lg:text-right">
             <p>
-              © 2024 Airdomax Limited. All rights reserved. EU patent number 7.069.242
+              © 2024 Airdomax Limited. All rights reserved. EU patent number
+              7.069.242
             </p>
           </div>
         </div>
