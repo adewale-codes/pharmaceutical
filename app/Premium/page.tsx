@@ -167,7 +167,7 @@ const premium = () => {
             </div>
             <div className="pt-2">
               Our analysis will give valuable insights into a particular
-              product's performance in different countries and help identify
+              product&apos;s performance in different countries and help identify
               opportunities for growth and development.
             </div>
             <div className="active:opacity-50">
@@ -187,7 +187,7 @@ const premium = () => {
             Premium service is a paid service provided by Pipelinepharma
           </div>
           <div>
-            The price depends on the specific business case and project's scope
+            The price depends on the specific business case and project&apos;s scope
           </div>
         </div>
         <div className="flex pt-5 md:pt-10 items-center justify-center">
