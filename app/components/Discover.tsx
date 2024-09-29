@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 
 const Discover = () => {
   return (

@@ -5,15 +5,18 @@ interface PersonalDetailsProps {
 }
 
 const PersonalDetails: React.FC<PersonalDetailsProps> = ({ onNext }) => {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [name, setName] = useState<string>("");
+  const [surname, setSurname] = useState<string>("");
+  const [phoneNumber, setPhoneNumber] = useState<string>("");
 
-  const handleNext = () => {
-    if (name && surname && phoneNumber) {
-      onNext();
-    } else {
+  const handleNext = (): void => {
+    const phoneRegex = /^\+?[1-9]\d{1,14}$/;
+    if (!name || !surname || !phoneNumber) {
       alert("Please fill in all fields");
+    } else if (!phoneRegex.test(phoneNumber)) {
+      alert("Please enter a valid phone number including country code");
+    } else {
+      onNext();
     }
   };
 
@@ -33,6 +36,7 @@ const PersonalDetails: React.FC<PersonalDetailsProps> = ({ onNext }) => {
               onChange={(e) => setName(e.target.value)}
               placeholder="John"
               className="w-full border rounded-lg px-3 py-2 mt-2"
+              required
             />
           </div>
           <div className="mb-4">
@@ -43,6 +47,7 @@ const PersonalDetails: React.FC<PersonalDetailsProps> = ({ onNext }) => {
               onChange={(e) => setSurname(e.target.value)}
               placeholder="Doe"
               className="w-full border rounded-lg px-3 py-2 mt-2"
+              required
             />
           </div>
           <div className="mb-4">
@@ -55,6 +60,7 @@ const PersonalDetails: React.FC<PersonalDetailsProps> = ({ onNext }) => {
               onChange={(e) => setPhoneNumber(e.target.value)}
               placeholder="i.e +234"
               className="w-full border rounded-lg px-3 py-2 mt-2"
+              required
             />
           </div>
           <button

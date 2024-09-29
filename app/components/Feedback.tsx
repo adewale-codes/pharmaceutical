@@ -12,42 +12,29 @@ const Feedback: React.FC = () => {
     {
       name: "Sophia Muller",
       position: "CEO of PharmaTech",
-      image: "images/p1.svg",
-      feedback: `“Using Pipelinepharma has revolutionized our sourcing process...”`,
-    },
-    {
-      name: "Sophia Muller",
-      position: "CEO of PharmaTech",
-      image: "images/p2.svg",
+      image: "/images/p1.svg",
       feedback: `“Using Pipelinepharma has revolutionized our sourcing process...”`,
     },
     {
       name: "David Klines",
       position: "VP of Operations at MedGlobal",
-      image: "images/p3.svg",
+      image: "/images/p2.svg",
       feedback: `“We rely on Pipelinepharma for quick and reliable access to dossiers...”`,
     },
     {
       name: "David Kline",
       position: "VP of Operations at MedGlobal",
-      image: "images/p3.svg",
-      feedback: `“We rely on Pipelinepharma for quick and reliable access to dossiers...”`,
-    },
-    {
-      name: "David Kline",
-      position: "VP of Operations at MedGlobal",
-      image: "images/p3.svg",
-      feedback: `“.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi purus lectus, euismod id 
-      orci sit amet, aliquet tincidunt erat. Ut dapibus lacinia turpis vulputate efficitur.
-.”`,
+      image: "/images/p3.svg",
+      feedback: `“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi purus lectus, euismod id 
+      orci sit amet, aliquet tincidunt erat. Ut dapibus lacinia turpis vulputate efficitur.”`,
     },
   ];
 
   return (
-    <div className="p-5 md:p-24 bg-blue-200  ">
+    <div className="p-5 md:p-24 bg-blue-200">
       <div>
         <div className="font-extrabold md:text-4xl text-2xl text-center mb-10">
-          What do <span className="text-orange-600"> our happy</span> customer
+          What do <span className="text-orange-600">our happy</span> customers
           <br /> say about us
         </div>
 
@@ -76,20 +63,20 @@ const Feedback: React.FC = () => {
         >
           {feedbackData.map((feedback, index) => (
             <SwiperSlide key={index} className="py-5">
-              <div className="w-100 flex flex-col gap-10 p-5 rounded-md h-70 bg-white shadow-md shadow-lg">
-                <div className="flex items-center gap-5 ">
+              <div className="w-full flex flex-col gap-10 p-5 rounded-md h-70 bg-white shadow-lg">
+                <div className="flex items-center gap-5">
                   <Image
                     src={feedback.image}
-                    alt="profile"
+                    alt={`${feedback.name}'s profile`}
                     width={50}
                     height={50}
                   />
                   <div>
-                    <div>{feedback.name}</div>
-                    <div>{feedback.position}</div>
+                    <div className="font-bold">{feedback.name}</div>
+                    <div className="text-sm text-gray-500">{feedback.position}</div>
                   </div>
                 </div>
-                <div className="p-5">{feedback.feedback}</div>
+                <div className="p-5 text-gray-600">{feedback.feedback}</div>
               </div>
             </SwiperSlide>
           ))}

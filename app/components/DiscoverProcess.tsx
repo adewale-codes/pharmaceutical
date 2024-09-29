@@ -10,21 +10,21 @@ const DiscoverProcess: React.FC = () => {
       id: 1,
       title: "1. Discover new products",
       description:
-        "Search for the high-potential products in the largest expert-curated CTD database. Narrow your search applying the industry-specific filter that helps sort products by GMP approvals, country of origin, dossier type, dossier status, and other valuable features.",
+        "Search for high-potential products in the largest expert-curated CTD database. Narrow your search by applying industry-specific filters, such as GMP approvals, country of origin, dossier type, and other valuable features.",
       image: "/images/first.svg",
     },
     {
       id: 2,
-      title: "2. Get positive response from manufacturers",
+      title: "2. Get positive responses from manufacturers",
       description:
-        "Submit a request indicating your target market(s), annual purchase forecast, preferable deal type, and your specific remarks. Get feedback via email. Use our platform to track your inquiry progress",
+        "Submit a request indicating your target market(s), annual purchase forecast, preferable deal type, and specific remarks. Receive feedback via email, and use our platform to track your inquiry progress.",
       image: "/images/second.svg",
     },
     {
       id: 3,
       title: "3. Connect with qualified manufacturers directly",
       description:
-        "Upon a supplier confirming interest, we facilitate direct negotiations between you and the supplier, empowering you with control and transparency throughout the process. Importantly, there are no additional fees, and you finalize all deals directly with the suppliers.",
+        "Once a supplier shows interest, we facilitate direct negotiations between you and the supplier, giving you control and transparency throughout the process. No additional fees are involved, and you finalize all deals directly with the suppliers.",
       image: "/images/third.svg",
     },
   ];
@@ -50,6 +50,7 @@ const DiscoverProcess: React.FC = () => {
               <div
                 className="flex items-center gap-2 cursor-pointer"
                 onClick={() => setActiveStep(step.id)}
+                aria-current={activeStep === step.id ? "step" : undefined}
               >
                 <div
                   className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all ${
@@ -84,12 +85,11 @@ const DiscoverProcess: React.FC = () => {
 
       <div className="flex-1 w-full h-[400px] md:h-auto relative">
         <Image
-          src={steps.find((step) => step.id === activeStep)?.image || ""}
+          src={steps.find((step) => step.id === activeStep)?.image || "/images/default.svg"}
           alt={`Step ${activeStep}`}
-          //   objectFit="cover"
           height={1000}
           width={1000}
-          className="shadow-md"
+          className="shadow-md object-cover"
         />
       </div>
     </div>

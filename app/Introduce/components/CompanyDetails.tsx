@@ -1,15 +1,20 @@
 import { useState } from "react";
-import Select from "react-select";
+import Select, { SingleValue } from "react-select";
 import countryList from "react-select-country-list";
 
 interface CompanyDetailsProps {
   onSubmit: () => void;
 }
 
+interface CountryOption {
+  label: string;
+  value: string;
+}
+
 const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
-  const [companyName, setCompanyName] = useState("");
-  const [country, setCountry] = useState<any>(null);
-  const [description, setDescription] = useState("");
+  const [companyName, setCompanyName] = useState<string>("");
+  const [country, setCountry] = useState<SingleValue<CountryOption>>(null);
+  const [description, setDescription] = useState<string>("");
   const [interests, setInterests] = useState({
     buying: false,
     selling: false,
@@ -19,10 +24,10 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
   const countryOptions = countryList().getData();
 
   const handleSave = () => {
-    if (companyName && country) {
+    if (companyName && country?.value) {
       onSubmit();
     } else {
-      alert("Please fill in all fields");
+      alert("Please fill in all required fields");
     }
   };
 
@@ -39,6 +44,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
               onChange={(e) => setCompanyName(e.target.value)}
               placeholder="Pharmit"
               className="w-full border rounded-lg px-3 py-2 mt-2"
+              required
             />
           </div>
           <div className="mb-4">
@@ -49,6 +55,8 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
               options={countryOptions}
               placeholder="Select your country"
               className="mt-2"
+              isClearable
+              required
             />
           </div>
           <div className="mb-4">

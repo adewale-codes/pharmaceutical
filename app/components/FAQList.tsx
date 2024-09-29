@@ -7,9 +7,9 @@ interface FAQProps {
 }
 
 const FAQItem: React.FC<FAQProps> = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const toggleOpen = () => {
+  const toggleOpen = (): void => {
     setIsOpen(!isOpen);
   };
 
@@ -41,7 +41,7 @@ const FAQList: React.FC = () => {
     {
       question: "How can I order Subscription service?",
       answer:
-        "To express your interest in the Subscription plan, please click on the Request Subscription plan button and fill out the form or send us an email at ",
+        "To express your interest in the Subscription plan, please click on the Request Subscription plan button and fill out the form or send us an email at support@example.com.",
     },
     {
       question: "What happens after ordering a Subscription plan?",

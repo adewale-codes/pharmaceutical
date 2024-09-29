@@ -74,7 +74,7 @@ const About = () => {
           </div>
           <div className="">
             <Image
-              src={"images/globes.svg"}
+              src={"/images/globes.svg"}
               alt="globe"
               width={800}
               height={800}
@@ -133,7 +133,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-5 pt-5 md:pt-10 items-center justify-center">
           <div className="shadow-md rounded">
             <Image
-              src={"images/i1.svg"}
+              src={"/images/i1.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -141,7 +141,7 @@ const About = () => {
           </div>
           <div className="shadow-md rounded">
             <Image
-              src={"images/i2.svg"}
+              src={"/images/i2.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -149,7 +149,7 @@ const About = () => {
           </div>
           <div className="shadow-md rounded">
             <Image
-              src={"images/i3.svg"}
+              src={"/images/i3.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -157,7 +157,7 @@ const About = () => {
           </div>
           <div className="shadow-md rounded">
             <Image
-              src={"images/i4.svg"}
+              src={"/images/i4.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -165,7 +165,7 @@ const About = () => {
           </div>
           <div className="shadow-md rounded">
             <Image
-              src={"images/i5.svg"}
+              src={"/images/i5.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -180,7 +180,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-5 pt-5 md:pt-10 items-center justify-center">
           <div className="">
             <Image
-              src={"images/m1.svg"}
+              src={"/images/m1.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -188,7 +188,7 @@ const About = () => {
           </div>
           <div className="">
             <Image
-              src={"images/m2.svg"}
+              src={"/images/m2.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -196,7 +196,7 @@ const About = () => {
           </div>
           <div className="">
             <Image
-              src={"images/m3.svg"}
+              src={"/images/m3.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -204,7 +204,7 @@ const About = () => {
           </div>
           <div className="">
             <Image
-              src={"images/m4.svg"}
+              src={"/images/m4.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -212,7 +212,7 @@ const About = () => {
           </div>
           <div className="">
             <Image
-              src={"images/m5.svg"}
+              src={"/images/m5.svg"}
               alt="Pratica"
               width={200}
               height={200}
@@ -220,7 +220,7 @@ const About = () => {
           </div>
           <div className="">
             <Image
-              src={"images/m6.svg"}
+              src={"/images/m6.svg"}
               alt="Pratica"
               width={200}
               height={200}

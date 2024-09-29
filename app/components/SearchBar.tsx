@@ -7,6 +7,10 @@ const SearchBar: React.FC = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
+    if (searchTerm.trim() === "") {
+      console.log("Please enter a search term");
+      return;
+    }
     console.log("Search Term:", searchTerm);
   };
 
@@ -22,10 +26,14 @@ const SearchBar: React.FC = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="p-4 pl-6 md:pl-4 text-sm md:text-base flex-grow outline-none text-gray-600"
           placeholder="Search... 83 100+ products"
+          aria-label="Search products"
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white flex items-center px-8 py-4"
+          className={`bg-blue-500 text-white flex items-center px-8 py-4 hover:bg-blue-600 transition duration-300 ${
+            searchTerm.trim() === "" ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+          disabled={searchTerm.trim() === ""}
         >
           <MagnifyingGlassIcon className="w-5 h-5 stroke-current stroke-2" />
           <span className="ml-2 text-sm md:text-base font-bold text-xl">

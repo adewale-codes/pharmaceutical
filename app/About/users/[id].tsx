@@ -1,10 +1,19 @@
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const UserDetails = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  if (router.isFallback || !id) {
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    if (id) {
+      setLoading(false);
+    }
+  }, [id]);
+
+  if (loading || !id) {
     return <div>Loading...</div>;
   }
 
