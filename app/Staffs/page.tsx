@@ -1,12 +1,7 @@
-import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
 
 const UserDetails = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
-  if (router.isFallback || !id) {
-    return <div>Loading...</div>;
-  }
+  const { id } = useParams();
 
   const user = {
     id,
