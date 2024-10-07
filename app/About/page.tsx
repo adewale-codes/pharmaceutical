@@ -124,7 +124,9 @@ const About = () => {
       </div>
       <div className="p-5 md:p-24 text-2xl md:text-6xl font-bold">
         <div>Our experts</div>
-        <UserCardSlider users={users} />
+        <div className="flex flex-row md:flex-col items-center">
+          <UserCardSlider users={users} />
+        </div>
       </div>
       <div className="p-5 md:p-24">
         <div className="font-bold text-2xl md:text-6xl text-center md:text-left">

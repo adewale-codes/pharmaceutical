@@ -41,7 +41,7 @@ const premium = () => {
           <p>Tailored service for your unique business objective.</p>
           <p>How it works?</p>
         </div>
-        <div className="flex flex-col gap-5 md:flex-row pt-5 md:pt-10">
+        <div className="flex flex-col items-center  gap-5 md:flex-row pt-5 md:pt-10">
           <div className="bg-gray-100 h-64 w-64 rounded p-5">
             <div className="text-center font-bold md:text-xl">
               <p className="">Define business case requirements</p>
