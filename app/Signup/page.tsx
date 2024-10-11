@@ -93,7 +93,8 @@ const Signup = () => {
           <Image
             src="/images/signin-bg.jpg"
             alt="Pipeline Pharma"
-            layout="fill"
+            width={1000}
+            height={1000}
             className="object-cover opacity-90"
           />
         </div>

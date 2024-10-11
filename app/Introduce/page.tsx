@@ -16,21 +16,21 @@ const Introduce: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-8">
-        <div className="mb-6 text-center">
+      <div className="w-full my-10 py-10 max-w-md bg-white shadow-lg rounded-lg p-8">
+        <div className="mb-6 text-xs md:text-base text-center">
           <span
             className={`mx-2 px-3 py-1 rounded-full ${
               step === 1 ? "bg-blue-500 text-white" : "bg-gray-300"
             }`}
           >
-            1. Personal Details
+            Personal Details
           </span>
           <span
             className={`mx-2 px-3 py-1 rounded-full ${
               step === 2 ? "bg-blue-500 text-white" : "bg-gray-300"
             }`}
           >
-            2. Company Details
+            Company Details
           </span>
         </div>
 

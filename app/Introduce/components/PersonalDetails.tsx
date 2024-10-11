@@ -21,15 +21,15 @@ const PersonalDetails: React.FC<PersonalDetailsProps> = ({ onNext }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="bg-white rounded-lg p-8 w-full max-w-md">
         <h2 className="text-xl font-bold mb-4">Introduce yourself</h2>
-        <p className="text-gray-500 mb-6">
+        <p className="text-gray-500 mb-6 text-small md:text-base">
           This basic information will help us know you
         </p>
         <form>
           <div className="mb-4">
-            <label className="block text-gray-700">Name*</label>
+            <label className="block text-gray-700 text-small md:text-base">Name*</label>
             <input
               type="text"
               value={name}
@@ -40,7 +40,7 @@ const PersonalDetails: React.FC<PersonalDetailsProps> = ({ onNext }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Surname*</label>
+            <label className="block text-gray-700 text-small md:text-base">Surname*</label>
             <input
               type="text"
               value={surname}
@@ -51,7 +51,7 @@ const PersonalDetails: React.FC<PersonalDetailsProps> = ({ onNext }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">
+            <label className="block text-gray-700 text-small md:text-base">
               Phone number (incl. country code)*
             </label>
             <input

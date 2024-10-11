@@ -32,12 +32,12 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="bg-white rounded-lg p-8 w-full max-w-md">
         <h2 className="text-xl font-bold mb-4">Introduce your company</h2>
         <form>
           <div className="mb-4">
-            <label className="block text-gray-700">Company name*</label>
+            <label className="block text-gray-700 text-small md:text-base">Company name*</label>
             <input
               type="text"
               value={companyName}
@@ -48,7 +48,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Country*</label>
+            <label className="block text-gray-700 text-small md:text-base">Country*</label>
             <Select
               value={country}
               onChange={setCountry}
@@ -60,7 +60,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">
+            <label className="block text-gray-700 text-small md:text-base">
               Provide a short description about your company
             </label>
             <textarea
@@ -71,9 +71,9 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">We are interested in*</label>
+            <label className="block text-gray-700 text-small md:text-base">We are interested in*</label>
             <div className="flex space-x-4 mt-2">
-              <label className="flex items-center">
+              <label className="flex items-center text-small md:text-base">
                 <input
                   type="checkbox"
                   checked={interests.buying}
@@ -83,7 +83,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
                 />
                 <span className="ml-2">Buying</span>
               </label>
-              <label className="flex items-center">
+              <label className="flex items-center text-small md:text-base">
                 <input
                   type="checkbox"
                   checked={interests.selling}
@@ -93,7 +93,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ onSubmit }) => {
                 />
                 <span className="ml-2">Selling</span>
               </label>
-              <label className="flex items-center">
+              <label className="flex items-center text-small md:text-base">
                 <input
                   type="checkbox"
                   checked={interests.license}
