@@ -23,6 +23,8 @@ const UserCard: React.FC<UserCardProps> = ({
         className="w-full h-64 object-cover rounded-t-lg"
         src={image}
         alt={name}
+        width={200}
+        height={200}
       />
       <div className="absolute inset-0 flex flex-col justify-end bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="p-4">

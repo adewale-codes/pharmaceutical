@@ -90,8 +90,8 @@ const Nav: React.FC = () => {
         </Link>
         <div className="justify-self-start lg:pl-16 hidden lg:flex items-center justify-center gap-2 md:gap-8">
           <Link
-            className={pathName === "/marketplace" ? "" : "text-black"}
-            href="/marketplace"
+            className={pathName === "/Marketplace" ? "" : "text-black"}
+            href="/Marketplace"
           >
             Marketplace
           </Link>
@@ -133,7 +133,7 @@ const Nav: React.FC = () => {
         } lg:relative lg:translate-x-0 lg:justify-self-start lg:pl-32 lg:flex lg:items-center lg:justify-center lg:gap-2 lg:md:gap-8 lg:bg-transparent text-black`}
       >
         <div className="flex flex-col space-y-5 m-5">
-          <Link href="/marketplace">Marketplace</Link>
+          <Link href="/Marketplace">Marketplace</Link>
           <Dropdown title="For Buyers" items={buyersDropdownItems} />
           <Dropdown title="For Sellers" items={sellersDropdownItems} />
           <Dropdown title="Company" items={companyDropdownItems} />
