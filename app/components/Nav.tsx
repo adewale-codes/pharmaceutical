@@ -83,8 +83,8 @@ const Nav: React.FC = () => {
   ];
 
   return (
-    <nav>
-      <div className="bg-white text-black grid lg:grid-cols-[200px_minmax(400px,_1fr)_250px] grid-cols-[1fr_50px] items-center lg:px-16 px-4 py-5 h-24">
+    <nav className="sticky top-0 z-1000">
+      <div className="position:sticky; top: 0, z-index: 1000; bg-blue-50 text-black grid lg:grid-cols-[200px_minmax(400px,_1fr)_250px] grid-cols-[1fr_50px] items-center lg:px-16 px-4 py-5 h-24">
         <Link href="/">
           <p>Pharmacuetical</p>
         </Link>
